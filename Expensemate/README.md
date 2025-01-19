@@ -1,50 +1,66 @@
-# Welcome to your Expo app 👋
+# Expensemate
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Expensemate is a comprehensive expense tracking application designed to help users manage their finances efficiently. This project aims to provide a user-friendly interface for logging expenses, categorizing them, and generating insightful reports.
 
-## Get started
+## Features
 
-1. Install dependencies
+- **Expense Tracking**: Log daily expenses with details such as amount, category, and date.
+- **Categorization**: Organize expenses into predefined or custom categories.
+- **Reports**: Generate monthly, quarterly, and yearly reports to analyze spending habits.
+- **Budgeting**: Set budget limits for different categories and track progress.
+- **Multi-Platform**: Available on web, iOS, and Android platforms.
 
+## Installation
+
+### Prerequisites
+
+- Node.js (v14 or higher)
+- npm (v6 or higher)
+- Expo CLI
+
+### Steps
+
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/unawarexi/Expensemate.git
+   cd Expensemate
+   ```
+
+2. **Install dependencies**:
    ```bash
    npm install
    ```
 
-2. Start the app
-
+3. **Start the development server**:
    ```bash
-    npx expo start
+   expo start
    ```
 
-In the output, you'll find options to open the app in a
+4. **Run on your device**:
+   - For iOS: Use the Expo Go app from the App Store.
+   - For Android: Use the Expo Go app from the Google Play Store.
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## Usage
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+1. **Create an Account**: Sign up with your email or use a social login.
+2. **Log Expenses**: Add new expenses by entering the amount, selecting a category, and providing a description.
+3. **View Reports**: Navigate to the reports section to view your spending patterns.
+4. **Set Budgets**: Go to the budgeting section to set limits for different categories.
 
-## Get a fresh project
+## Contributing
 
-When you're ready, run:
+We welcome contributions from the community. To contribute:
 
-```bash
-npm run reset-project
-```
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature-branch`).
+3. Make your changes and commit them (`git commit -m 'Add new feature'`).
+4. Push to the branch (`git push origin feature-branch`).
+5. Open a pull request.
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## License
 
-## Learn more
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
-To learn more about developing your project with Expo, look at the following resources:
+## Contact
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+For any questions or feedback, please reach out to us at just.andrew.ckw@gmail.com.
