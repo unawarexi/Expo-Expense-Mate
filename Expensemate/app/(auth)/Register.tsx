@@ -7,10 +7,12 @@ import { colors, spacingX, spacingY, radius } from '@/constants/theme';
 import { verticalScale } from '@/utils/styling';
 import Icon from 'react-native-vector-icons/Ionicons';
 import { useRouter } from 'expo-router';
+import Loading from '@/components/Loading';
 
 const Register = () => {
    const [isLoading, setisLoading] = useState(false)
-
+  
+ 
   //--------- password visibility
   const [isPasswordVisible, setIsPasswordVisible] = useState(false);
   const togglePasswordVisibility = () => {
@@ -45,6 +47,7 @@ const handleSubmit = () => {
 
   try {
     setisLoading(true);
+    <Loading />
     alert("Good to go");
     // Perform your form submission logic here, like API call or navigation
     // router.replace("/(app)/Home");
