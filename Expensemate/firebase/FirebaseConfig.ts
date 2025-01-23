@@ -1,19 +1,20 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
+import { FIREBASE_API_KEY,  FIREBASE_AUTH_DOMAIN , FIREBASE_PROJECT_ID,FIREBASE_STORAGE_BUCKET , FIREBASE_MESAGING_SENDER_ID, FIREBASE_APP_ID, FIREBASE_MEASUREMENT_ID} from '@env';
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyCJiLQF0d6j1fruOVRzZT-05rL-1jhsGwo",
-  authDomain: "expensemate-c313c.firebaseapp.com",
-  projectId: "expensemate-c313c",
-  storageBucket: "expensemate-c313c.firebasestorage.app",
-  messagingSenderId: "45760606441",
-  appId: "1:45760606441:web:cab8c6fa385c193e3c4078",
-  measurementId: "G-DV07GNJF38"
+  apiKey: process.env.FIREBASE_API_KEY,
+  authDomain: process.env.FIREBASE_AUTH_DOMAIN,
+  projectId: process.env.FIREBASE_PROJECT_ID,
+  storageBucket: process.env.FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.FIREBASE_MESAGING_SENDER_ID,
+  appId: process.env. FIREBASE_APP_ID,
+  measurementId: process.env.FIREBASE_MEASUREMENT_ID
 };
 
 // Initialize Firebase

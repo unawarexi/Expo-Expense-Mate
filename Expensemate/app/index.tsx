@@ -34,7 +34,7 @@ const index = () => {
       <Image
         resizeMode="contain"
         style={styles.logo}
-        source={require("../assets/images/splashImage.png")}
+        source={require("../assets/images/icon.png")}
       />
     </View>
   );
