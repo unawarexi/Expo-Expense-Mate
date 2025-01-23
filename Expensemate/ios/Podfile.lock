@@ -3,7 +3,7 @@ PODS:
   - DoubleConversion (1.1.6)
   - EXConstants (17.0.4):
     - ExpoModulesCore
-  - Expo (52.0.25):
+  - Expo (52.0.27):
     - ExpoModulesCore
   - ExpoAsset (11.0.2):
     - ExpoModulesCore
@@ -15,13 +15,13 @@ PODS:
     - ExpoModulesCore
   - ExpoHaptics (14.0.1):
     - ExpoModulesCore
-  - ExpoHead (4.0.16):
+  - ExpoHead (4.0.17):
     - ExpoModulesCore
   - ExpoKeepAwake (14.0.2):
     - ExpoModulesCore
   - ExpoLinking (7.0.4):
     - ExpoModulesCore
-  - ExpoModulesCore (2.1.3):
+  - ExpoModulesCore (2.1.4):
     - DoubleConversion
     - glog
     - hermes-engine
@@ -44,7 +44,7 @@ PODS:
     - ReactCommon/turbomodule/bridging
     - ReactCommon/turbomodule/core
     - Yoga
-  - ExpoSplashScreen (0.29.20):
+  - ExpoSplashScreen (0.29.21):
     - ExpoModulesCore
   - ExpoSymbols (0.2.1):
     - ExpoModulesCore
@@ -1647,6 +1647,27 @@ PODS:
     - React-logger (= 0.76.6)
     - React-perflogger (= 0.76.6)
     - React-utils (= 0.76.6)
+  - RNCAsyncStorage (1.24.0):
+    - DoubleConversion
+    - glog
+    - hermes-engine
+    - RCT-Folly (= 2024.01.01.00)
+    - RCTRequired
+    - RCTTypeSafety
+    - React-Core
+    - React-debug
+    - React-Fabric
+    - React-featureflags
+    - React-graphics
+    - React-ImageManager
+    - React-NativeModulesApple
+    - React-RCTFabric
+    - React-rendererdebug
+    - React-utils
+    - ReactCodegen
+    - ReactCommon/turbomodule/bridging
+    - ReactCommon/turbomodule/core
+    - Yoga
   - RNGestureHandler (2.20.2):
     - DoubleConversion
     - glog
@@ -1906,6 +1927,7 @@ DEPENDENCIES:
   - React-utils (from `../node_modules/react-native/ReactCommon/react/utils`)
   - ReactCodegen (from `build/generated/ios`)
   - ReactCommon/turbomodule/core (from `../node_modules/react-native/ReactCommon`)
+  - "RNCAsyncStorage (from `../node_modules/@react-native-async-storage/async-storage`)"
   - RNGestureHandler (from `../node_modules/react-native-gesture-handler`)
   - RNReanimated (from `../node_modules/react-native-reanimated`)
   - RNScreens (from `../node_modules/react-native-screens`)
@@ -2076,6 +2098,8 @@ EXTERNAL SOURCES:
     :path: build/generated/ios
   ReactCommon:
     :path: "../node_modules/react-native/ReactCommon"
+  RNCAsyncStorage:
+    :path: "../node_modules/@react-native-async-storage/async-storage"
   RNGestureHandler:
     :path: "../node_modules/react-native-gesture-handler"
   RNReanimated:
@@ -2091,17 +2115,17 @@ SPEC CHECKSUMS:
   boost: 1dca942403ed9342f98334bf4c3621f011aa7946
   DoubleConversion: f16ae600a246532c4020132d54af21d0ddb2a385
   EXConstants: cc788e18fb962b77999c16f6b90e551542b1bcf4
-  Expo: 377cc60ce8c9030cf52e36987ab3ce099ab9006e
+  Expo: 7021c4880d0bbd02781e88e213b6786c1200ebdf
   ExpoAsset: 6cc988c426b5fc997859cc0f8f6728d1376bf53f
   ExpoBlur: 5327b09a58e04e4066dd95fe994d8ef5539a1f26
   ExpoFileSystem: a0a5c44d3d3e8a2aa54fe7c70c7690df03cf4dd8
   ExpoFont: 8b14db1afebf62e9774613a082e402985f4e747c
   ExpoHaptics: e01cce0741d68c281853118eb0267f88d42c6b7a
-  ExpoHead: 9ea4e125f3aafd23e56f7feb4942c7b595889610
+  ExpoHead: 3d555eb5d0d68c478b9ea259337686c58de22c71
   ExpoKeepAwake: 1f74cdf53ab3b3aeb7110f18eb053c92e7c3e710
   ExpoLinking: a9e64f08d2bb4fc42e7441174f15cc535bb390ba
-  ExpoModulesCore: f9546265a5e1f1fd67473bb2f0463b28252cee49
-  ExpoSplashScreen: d86865bb6e660da9e5de992ca178be2cbae338ee
+  ExpoModulesCore: 8dc3ee6a2324ab1b5e8be9ede5c4e60b948c1f7f
+  ExpoSplashScreen: 2625fffb137856c82c32d6f25e7ee97249bdc0ee
   ExpoSymbols: 54fa089478e1bc00f4d1d66ffb5c8bc64dc71ada
   ExpoSystemUI: 7296f92af7c30ec0fc4305bbeb5c396d7fc9e86c
   ExpoWebBrowser: 6890a769e6c9d83da938dceb9a03e764afc3ec9c
@@ -2167,6 +2191,7 @@ SPEC CHECKSUMS:
   React-utils: e6697b03f21c7ac57b075d848cda7882662cabf7
   ReactCodegen: 484b223748d7489d7036db1cbf79896d297e33a7
   ReactCommon: 832cdd669aeecd430d9ca1975d15676b38d0b263
+  RNCAsyncStorage: 3ad840f7b17b45ca7ebbbb0e80948564a9513315
   RNGestureHandler: fc5ce5bf284640d3af6431c3a5c3bc121e98d045
   RNReanimated: 9ee6347ca0aa3cf78cae715455e781728ae142e2
   RNScreens: d022507f2b6d76c73335e9e35aedcf7bb2f791b0
