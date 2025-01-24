@@ -8,9 +8,12 @@ import { verticalScale } from '@/utils/styling';
 import Icon from 'react-native-vector-icons/Ionicons';
 import { useRouter } from 'expo-router';
 import Loading from '@/components/Loading';
+import { useAuth } from '@/contexts/authContext';
+
 
 const Register = () => {
    const [isLoading, setisLoading] = useState(false)
+   const {register: registerUser} = useAuth()
   
  
   //--------- password visibility
@@ -29,32 +32,30 @@ const [formData, setFormData] = useState({
 });
 
 // Function to handle form submission
-const handleSubmit = () => { 
+const handleSubmit = async () => { 
   // destructure form data
   const { firstname, lastname, email, password, confirmPassword } = formData;
   
-  if (
-    !firstname.trim() || 
-    !lastname.trim() || 
-    !email.trim() || 
-    !password.trim() || 
-    !confirmPassword.trim()
-  ) {
+  if (!firstname.trim() || !lastname.trim() || !email.trim() || !password.trim() || !confirmPassword.trim()) {
     alert("Please fill in all fields");
-    setisLoading(false);
     return;
-  }
-
-  try {
+  } 
+  try  {
     setisLoading(true);
-    <Loading />
-    alert("Good to go");
-    // Perform your form submission logic here, like API call or navigation
-    // router.replace("/(app)/Home");
+
+    // Call register function from the auth context
+    const response = await registerUser(email, password, confirmPassword, firstname, lastname);
+
+    if (response.success) {
+      alert("Registration successful");
+    } else {
+      alert(response.msg);
+    }
   } finally {
     setisLoading(false);
   }
 };
+
 
 
   // state to handle checked box 
